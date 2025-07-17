@@ -28,7 +28,7 @@
     async function obtenerReservas() {
       try {
         const response = await fetch(
-          'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vT_nn_ZSKMibu0CZRoaRXzFyXepjJG2bjaT1H-s35ns3iZuIrVkU76h5hlI1uds8Q/pub?output=csv'
+          'https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vT_nn_ZSKMibu0CZRoaRXzFyXepjJG2bjaT1H-s35ns3iZuIrVkU76h5hlI1uds8Q/pubhtml#'
         );
         const data = await response.text();
         const filas = data.trim().split('\n');
